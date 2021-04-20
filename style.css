@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+
+.intro {
+  display: flex;
+}
+
+.typing {
+  position: relative;
+  margin-left: 10px;
+}
+
+.typing::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 95%;
+  border-right: 2px solid black;
+  right: -5px;
+  animation: blink 1s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
